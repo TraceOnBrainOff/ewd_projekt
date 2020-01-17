@@ -24,24 +24,36 @@
   </body>
 </html>
 
-<div class="jumbotron text-center">
-    <h1>My First Bootstrap Page</h1>
-    <p>Resize this responsive page to see the effect!</p>
+<div class="jumbotron text-center bg-secondary">
+    <h1>Projekt z EWD</h1>
+    <p>tutaj źródła API</p>
+</div>
+
+<div class="jumbotron text-center bg-info">
+  <h1>STAN POWIETRZA</h1>
+  <p>Aktualny stan powietrza w Krakowie porównany do przyjętej normy</p>
 </div>
   
 <div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-            <h3>Column 1</h3>
-            <p>Lorem ipsum dolor..</p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Column 2</h3>
-            <p>Lorem ipsum dolor..</p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Column 3</h3>
-            <p>Lorem ipsum dolor..</p>
-        </div>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo_1">Pokaż wykres</button>
+  <div id="demo_1" class="collapse">
+    <div class="container p-3 my-3 bg-primary text-white">
+      <h1>Wykres #1</h1>
+      <p>Miejsce na wykres słupkowy porównujący normę powietrza do aktualnego stanu</p>
     </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center bg-warning">
+  <h1>TEMPERATURA</h1>
+  <p>Dzisiejsza temperatura oraz aktualnie przewidywana na 5 następnych dni</p>
+</div>
+
+<div class="container">
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo_2">Pokaż wykres</button>
+    <div id="demo_2" class="collapse">
+  <div class="container p-3 my-3 bg-success text-white">
+    <h1>Wykres #2</h1>
+    <p>Miejsce na wykres liniowy pokazujący temperaturę na 5 następnych dni</p>
+  </div>
 </div>

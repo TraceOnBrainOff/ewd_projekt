@@ -24,16 +24,27 @@
   </body>
 </html>
 <div class="bg-success text-white">
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Strona startowa</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Stan powietrza</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Temperatura</a>
-      </li>
-    </ul>
-  </nav>
+    <div class="jumbotron text-center bg-info">
+      <h1>STAN POWIETRZA</h1>
+      <p>Aktualny stan powietrza w Krakowie porównany do przyjętej normy</p>
+    </div>
+    <div class="bg-success text-dark">
+    <div class="container">
+      <h2>krakowskie powietrze</h2>
+      <p><strong>Wykres słupkowy</strong> porównuje przyjętą normę powietrza do aktualnego stanu</p>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              Kliknij by pokazać wykres
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <div class="wrapper"><canvas id="chart-0"></canvas></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>

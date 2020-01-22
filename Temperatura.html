@@ -24,16 +24,32 @@
   </body>
 </html>
 <div class="bg-success text-white">
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Strona startowa</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Stan powietrza</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Temperatura</a>
-      </li>
-    </ul>
-  </nav>
+<div class="jumbotron text-center bg-warning">
+    <h1>TEMPERATURA</h1>
+    <p>Dzisiejsza temperatura oraz aktualnie przewidywana na 5 następnych dni</p>
+  </div>
+  <div class="bg-success text-dark">
+  <div class="container">
+    <h2>temperatura w Krakowie</h2>
+    <p><strong>Wykres liniowy</strong> pokazujący dzisiejszą temperaturę oraz na pięć następnych dni</p>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+            Kliknij by pokazać wykres
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <div class="wrapper"><canvas id="chart-1"></canvas></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="scripts/graph_draw.js"></script> <!--Declare the graphs, add globals for ease of access in the latter scripts, etc-->
+  <script src="scripts/data_interpret.js"></script> <!--Functions that perform their work in their own async bubble-->
+  <script src="scripts/data_import.js"></script> <!--Main engine that actually performs the calls to get the data from the specified URLs-->
+</body>
+</html>

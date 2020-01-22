@@ -18,63 +18,63 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="chart/Chart.js"></script>
+
+    <div class="bg-success text-white">
+    <div class="jumbotron text-center bg-secondary">
+        <h1>Projekt z EWD</h1>
+        <p>tutaj źródła API</p>
+    </div>
+    <div class="jumbotron text-center bg-info">
+      <h1>STAN POWIETRZA</h1>
+      <p>Aktualny stan powietrza w Krakowie porównany do przyjętej normy</p>
+    </div>
+    <div class="bg-success text-dark">
+    <div class="container">
+      <h2>krakowskie powietrze</h2>
+      <p><strong>Wykres słupkowy</strong> porównuje przyjętą normę powietrza do aktualnego stanu</p>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+              Kliknij by pokazać wykres
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <div class="wrapper"><canvas id="chart-0"></canvas></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="jumbotron text-center bg-warning">
+      <h1>TEMPERATURA</h1>
+      <p>Dzisiejsza temperatura oraz aktualnie przewidywana na 5 następnych dni</p>
+    </div>
+    <div class="bg-success text-dark">
+    <div class="container">
+      <h2>temperatura w Krakowie</h2>
+      <p><strong>Wykres liniowy</strong> pokazujący dzisiejszą temperaturę oraz na pięć następnych dni</p>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+              Kliknij by pokazać wykres
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <div class="wrapper"><canvas id="chart-1"></canvas></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
     <script src="scripts/graph_draw.js"></script> <!--Declare the graphs, add globals for ease of access in the latter scripts, etc-->
     <script src="scripts/data_interpret.js"></script> <!--Functions that perform their work in their own async bubble-->
     <script src="scripts/data_import.js"></script> <!--Main engine that actually performs the calls to get the data from the specified URLs-->
   </body>
 </html>
-<div class="bg-success text-white">
-<div class="jumbotron text-center bg-secondary">
-    <h1>Projekt z EWD</h1>
-    <p>tutaj źródła API</p>
-</div>
-
-<div class="jumbotron text-center bg-info">
-  <h1>STAN POWIETRZA</h1>
-  <p>Aktualny stan powietrza w Krakowie porównany do przyjętej normy</p>
-</div>
-<div class="bg-success text-dark">
-<div class="container">
-  <h2>krakowskie powietrze</h2>
-  <p><strong>Wykres słupkowy</strong> porównuje przyjętą normę powietrza do aktualnego stanu</p>
-  <div id="accordion">
-    <div class="card">
-      <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-          Kliknij by pokazać wykres
-        </a>
-      </div>
-      <div id="collapseOne" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          <canvas id="chart-0"></canvas>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="jumbotron text-center bg-warning">
-  <h1>TEMPERATURA</h1>
-  <p>Dzisiejsza temperatura oraz aktualnie przewidywana na 5 następnych dni</p>
-</div>
-<div class="bg-success text-dark">
-<div class="container">
-  <h2>temperatura w Krakowie</h2>
-  <p><strong>Wykres liniowy</strong> pokazujący dzisiejszą temperaturę oraz na pięć następnych dni</p>
-  <div id="accordion">
-    <div class="card">
-      <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-          Kliknij by pokazać wykres
-        </a>
-      </div>
-      <div id="collapseTwo" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          <canvas id="chart-1"></canvas>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
